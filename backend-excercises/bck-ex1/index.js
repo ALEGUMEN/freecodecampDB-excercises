@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+
+// para usar render
+const PORT = process.env.PORT || 3000;
 
 // Ruta principal
 app.get("/", (req, res) => {
-  res.send("La app está corriendo en localhost:3000");
+  res.send("La app está corriendo en Render");
 });
 
 // Levantar el servidor
